@@ -13,5 +13,5 @@ testbp = Blueprint("testbp",__name__,url_prefix="/testbp",template_folder='templ
 @testbp.route("/testroute",methods=["GET"],endpoint="testfectchapi")
 def testfectchapi():
   dt_now = datetime.datetime.now()
-  return jsonify({"flask-- @testbp.route(/testroute":"is finished",
+  return jsonify({"flask-- @testbp.route(/testroute)":"is finished",
                   "nowtime":dt_now.strftime('%Y年%m月%d日 %H:%M:%S')})
